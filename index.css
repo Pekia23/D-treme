@@ -1,0 +1,287 @@
+/* The switch - the box around the slider */
+
+body{
+  font-family: Poppins;
+  font-optical-sizing: auto;
+  font-weight:normal;
+  background-color: #F2F9FE;
+}
+.poppins-thin {
+font-family: "Poppins", serif;
+font-weight: 100;
+font-style: normal;
+}
+
+.poppins-extralight {
+font-family: "Poppins", serif;
+font-weight: 200;
+font-style: normal;
+}
+
+.poppins-light {
+font-family: "Poppins", serif;
+font-weight: 300;
+font-style: normal;
+}
+
+.poppins-regular {
+font-family: "Poppins", serif;
+font-weight: 400;
+font-style: normal;
+}
+
+.poppins-medium {
+font-family: "Poppins", serif;
+font-weight: 500;
+font-style: normal;
+}
+
+.poppins-semibold {
+font-family: "Poppins", serif;
+font-weight: 600;
+font-style: normal;
+}
+
+.poppins-bold {
+font-family: "Poppins", serif;
+font-weight: 700;
+font-style: normal;
+}
+
+.poppins-extrabold {
+font-family: "Poppins", serif;
+font-weight: 800;
+font-style: normal;
+}
+
+.poppins-black {
+font-family: "Poppins", serif;
+font-weight: 900;
+font-style: normal;
+}
+
+.poppins-thin-italic {
+font-family: "Poppins", serif;
+font-weight: 100;
+font-style: italic;
+}
+
+.poppins-extralight-italic {
+font-family: "Poppins", serif;
+font-weight: 200;
+font-style: italic;
+}
+
+.poppins-light-italic {
+font-family: "Poppins", serif;
+font-weight: 300;
+font-style: italic;
+}
+
+.poppins-regular-italic {
+font-family: "Poppins", serif;
+font-weight: 400;
+font-style: italic;
+}
+
+.poppins-medium-italic {
+font-family: "Poppins", serif;
+font-weight: 500;
+font-style: italic;
+}
+
+.poppins-semibold-italic {
+font-family: "Poppins", serif;
+font-weight: 600;
+font-style: italic;
+}
+
+.poppins-bold-italic {
+font-family: "Poppins", serif;
+font-weight: 700;
+font-style: italic;
+}
+
+.poppins-extrabold-italic {
+font-family: "Poppins", serif;
+font-weight: 800;
+font-style: italic;
+}
+
+.poppins-black-italic {
+font-family: "Poppins", serif;
+font-weight: 900;
+font-style: italic;
+}  
+
+.switch {
+position: relative;
+display: inline-block;
+width: 60px;
+height: 34px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+opacity: 0;
+width: 0;
+height: 0;
+}
+
+/* The slider */
+.slider {
+position: absolute;
+cursor: pointer;
+top: 0;
+left: 0;
+right: 0;
+bottom: 0;
+background-color: #ccc;
+-webkit-transition: .4s;
+transition: .4s;
+}
+
+.slider:before {
+position: absolute;
+content: "";
+height: 26px;
+width: 26px;
+left: 4px;
+bottom: 4px;
+background-color: white;
+-webkit-transition: .4s;
+transition: .4s;
+}
+
+input:checked + .slider {
+background-color: #2196F3;
+}
+
+input:focus + .slider {
+box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+-webkit-transform: translateX(26px);
+-ms-transform: translateX(26px);
+transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+border-radius: 34px;
+}
+
+.slider.round:before {
+border-radius: 50%;
+}
+
+.menu{
+    display: flex;
+    gap:50px;
+    
+}
+
+
+ul{
+    display: flex;
+    gap:400px;
+    list-style:none;
+    align-items: center;
+}
+
+li>a{
+    text-decoration: none;
+    color: black;
+}
+
+a:hover{
+    text-decoration:underline;
+    color:#2A4DD0
+}
+
+main{
+    display: flex;
+    gap: 30px;
+}
+
+.logo{
+    text-align: center;
+    display: flex;
+}
+.logo img{
+    margin-top: 20px;
+}
+
+main > .main1{
+    padding: 5px 60px 5px 30px;
+}
+
+h1{
+    font-size: 75px;
+}
+
+.muñeco{
+    object-fit: cover;
+    height: 600px;
+    align-items: center;
+}
+
+.cara::before{
+    content: url("img/emoticonos.png");
+    display: inline;
+    margin: 5px;
+}
+
+.descripcion{
+    font-size: 30px;
+}
+
+.checks{
+    padding: 0;
+    gap:20px
+}
+
+.checks > li::before{
+    content: url("img/check.png");
+    display: inline;
+    margin: 5px;
+}
+
+.botones{
+    display: flex;
+    gap: 25px;
+    align-items: center;
+}
+
+.boton{
+    text-decoration: none;
+    color: whitesmoke;
+    background-color:#2A4DD0;
+    padding: 10px;
+    display: inline;
+    border-radius: 8px;
+}
+
+.boton:hover{
+    text-decoration: none;
+    color: whitesmoke;
+    background-color:#2545b7;
+    padding: 10px;
+    display: inline;
+    border-radius: 8px;
+}
+
+.enlace{
+    text-decoration: none;
+    color: black;
+
+}
+
+a:hover{
+    text-decoration:underline;
+    color:#2A4DD0;
+}
+.nombre{
+    font-size: 20px;
+}
